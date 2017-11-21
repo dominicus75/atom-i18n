@@ -50,7 +50,7 @@ Settings:
     {_label: "Available Updates", value: "Elérhető frissítések"}
   ]
   subSectionHeadings: [
-    {_label: "Invisible", value: "Láthatatlan"}
+    {_label: "Invisible", value: "Nem nyomtatható karakterek"}
     {_label: "Community Packages", value: "Közösségi csomagok"}
     {_label: "Core Packages", value: "Főbb csomagok"}
     {_label: "Development Packages", value: "Fejlesztői csomagok"}
@@ -145,8 +145,8 @@ Settings:
       }
       {
         _id: 'core.openEmptyEditorOnStart'
-        title: "Open Empty Editor On Start"
-        desc: "Automatically open an empty editor on startup."
+        title: "Üres szerkesztő-lap megnyitása"
+        desc: "Automatikusan egy üres szerkesztő-lapot is megnyit a program indításakor."
       }
       {
         _id: 'core.packagesWithKeymapsDisabled'
@@ -217,8 +217,8 @@ Settings:
       }
       {
         _id: 'editor.autoIndent'
-        title: "Auto Indent"
-        desc: "Automatically indent the cursor when inserting a newline."
+        title: "Automatikus behúzás"
+        desc: "Kurzor automatikus behúzása új sor beszúrásakor."
       }
       {
         _id: 'editor.autoIndentOnPaste'
@@ -227,7 +227,7 @@ Settings:
       }
       {
         _id: 'editor.backUpBeforeSaving'
-        title: "Back Up Before Saving"
+        title: "Biztonsági másolat készítése mentés előtt"
         desc: ""
       }
       {
@@ -247,49 +247,49 @@ Settings:
       }
       {
         _id: 'editor.invisibles.cr'
-        title: "Invisibles Cr"
-        desc: "Character used to render carriage return characters
-               (for Microsoft-style line endings) when the <code>Show
-               Invisibles</code> setting is enabled."
+        title: "Nem nyomtatható karakterek"
+        desc: "Kocsi vissza karakterek (\\r avagy Microsoft-stílusú sorvégek) megjelenítése, ha a 
+               <code>Nem nyomtatható karakterek mutatása</code> opció engedélyezve van."
       }
       {
         _id: 'editor.invisibles.eol'
-        title: "Invisibles Eol"
-        desc: "Character used to render newline characters (\n) when the
-               <code>Show Invisibles</code> setting is enabled."
+        title: "Nem nyomtatható sorvég"
+        desc: "Sorvégek karakteres (\\n) megjelenítése, ha a 
+              <code>Nem nyomtatható karakterek mutatása</code> opció engedélyezve van."
       }
       {
         _id: 'editor.invisibles.space'
-        title: "Invisibles Space"
-        desc: "Character used to render leading and trailing space characters
-               when the <code>Show Invisibles</code> setting is enabled."
+        title: "Nem nyomtatható szóköz"
+        desc: "Sor elején vagy végén álló szóközök karakteres megjelenítése,
+               ha a <code>Nem nyomtatható karakterek mutatása</code> opció engedélyezve van."
       }
       {
         _id: 'editor.invisibles.tab'
-        title: "Invisibles Tab"
-        desc: "Character used to render hard tab characters (\t) when the
-               <code>Show Invisibles</code> setting is enabled."
+        title: "Nem nyomtatható Tab"
+        desc: "Karakter (\\t) használata a kemény tabok megjelenítésre, ha a
+               <code>Nem nyomtatható karakterek mutatása</code> opció engedélyezve van."
       }
       {
         _id: 'editor.lineHeight'
-        title: "Line Height"
-        desc: "Height of editor lines, as a multiplier of font size."
+        title: "Sormagasság"
+        desc: "A szerkesztő sorainak magassága, a betűmérethez viszonyítva."
       }
       {
         _id: 'editor.maxScreenLineLength'
-        title: "Max Screen Line Length"
-        desc: "Defines the maximum width of the editor window before soft wrapping is enforced, in number of characters."
+        title: "Sorok maximális hossza a képernyőn"
+        desc: "A szerkesztőablak légy sortörés kikényszerítése előtti maximális szélességének beállítása,
+              karakter-számban megadva."
       }
       {
         _id: 'editor.nonWordCharacters'
-        title: "Non Word Characters"
-        desc: "A string of non-word characters to define word boundaries."
+        title: "Nem szóépítő karakterek"
+        desc: "A szavak határait kijelölő nem szóépítő karakterek."
       }
       {
         _id: 'editor.preferredLineLength'
-        title: "Preferred Line Length"
+        title: "Preferált sorhosszúság"
         desc: "Identifies the length of a line which is used when wrapping text
-               with the <code>Soft Wrap At Preferred Line Length</code> setting
+               with the <code>Lágy sortörés a beállított sorhosszúságnál</code> setting
                enabled, in number of characters."
       }
       {
@@ -305,44 +305,41 @@ Settings:
       }
       {
         _id: 'editor.showCursorOnSelection'
-        title: "Show Cursor On Selection"
-        desc: "Show cursor while there is a selection."
+        title: "Kurzor mutatása a kijelölésben"
+        desc: "Kurzor mutatása, amíg ka van jelölve."
       }
       {
         _id: 'editor.showIndentGuide'
-        title: "Show Indent Guide"
-        desc: "Show indentation indicators in the editor."
+        title: "Behúzás megjelenítése"
+        desc: "Behúzás mértékének szemléltetése vezetővonalak segítségével."
       }
       {
         _id: 'editor.showInvisibles'
-        title: "Show Invisibles"
-        desc: "Render placeholders for invisible characters, such as tabs,
-               spaces and newlines."
+        title: "Nem nyomtatható karakterek mutatása"
+        desc: "Nem nyomtatható (helyőrző) karakterek megjelenítése a képernyőn(tabulátorok, szóközök és új sor karakterek)."
       }
       {
         _id: 'editor.showLineNumbers'
-        title: "Show Line Numbers"
-        desc: "Show line numbers in the editor's gutter."
+        title: "Sorok számozása"
+        desc: "A sorok számozásának megjelenítése a szerkesztőben."
       }
       {
         _id: 'editor.softTabs'
-        title: "Soft Tabs"
-        desc: "If the <code>Tab Type</code> config setting is set to \"auto\"
-               and autodetection of tab type from buffer content fails, then
-               this config setting determines whether a soft tab or a hard tab
-               will be inserted when the Tab key is pressed."
+        title: "Lágy tabulátorok"
+        desc: "Ha a <code>Tabulátor típusa</code> beállítás értéke \"automatikus\"
+               és nem sikerül meghatározni a betöltött dokumentum tabulátor típusát, akkor
+               mind a lágy, mind a kemény tabok használatát a tab billenytű lenyomásával."
       }
       {
         _id: 'editor.softWrap'
-        title: "Soft Wrap"
-        desc: "Wraps lines that exceed the width of the window. When
-               <code>Soft Wrap At Preferred Line Length</code> is set, it will
-               wrap to the number of characters defined by the <code>Preferred
-               Line Length</code> setting."
+        title: "Lágy sortörés"
+        desc: "A képernyő szélessét meghaladó sorok darabolása. Hogyha a
+               <code>Lágy sortörés a beállított sorhosszúságnál</code> be van állítva, akkor
+               a <code>Preferált sorhosszúság</code> beállításban megadott karakterszámnál leszenk a sortörések."
       }
       {
         _id: 'editor.softWrapAtPreferredLineLength'
-        title: "Soft Wrap At Preferred Line Length"
+        title: "Lágy sortörés a beállított sorhosszúságnál"
         desc: "Instead of wrapping lines to the window's width, wrap lines to
                the number of characters defined by the <code>Preferred Line
                Length</code> setting. This will only take effect when the soft
@@ -353,25 +350,24 @@ Settings:
       }
       {
         _id: 'editor.softWrapHangingIndent'
-        title: "Soft Wrap Hanging Indent"
+        title: "Behúzástól függő lágy sortörés"
         desc: "When soft wrap is enabled, defines length of additional
                indentation applied to wrapped lines, in number of characters."
       }
       {
         _id: 'editor.tabLength'
-        title: "Tab Length"
-        desc: "Number of spaces used to represent a tab."
+        title: "Tabulátor hossza"
+        desc: "Egy tab hosszúsága szóközökben megadva."
       }
       {
         _id: 'editor.tabType'
-        title: "Tab Type"
-        desc: "Determine character inserted when Tab key is pressed. Possible
-               values: \"auto\", \"soft\" and \"hard\". When set to \"soft\" or
-               \"hard\", soft tabs (spaces) or hard tabs (tab characters) are
-               used. When set to \"auto\", the editor auto-detects the tab type
-               based on the contents of the buffer (it uses the first leading
-               whitespace on a non-comment line), or uses the value of the Soft
-               Tabs config setting if auto-detection fails."
+        title: "Tabulátor típusa"
+        desc: "A Tab billentyű lenyomására beszúrandó karakterek megatározása. Lehetséges
+               értékek: \"automatikus\", \"lágy\" és \"kemény\". Ha a kiválasztott érték a \"lágy\" vagy a
+               \"kemény\", akkor lágy (szóköz) vagy kemény (tab karakterek) tabulátorok lesznek alkalmazva.
+               Ha az \"automatikus\" értékre esne a választás, akkor a szerkesztő maga határozza meg a betöltött
+               dokumentumban eddig alkalmazott tabulátorok típusát. Ha ez nem sikerülne, akkor a 
+               <code>Lágy sortörés</code> beállításban szereplő értéket alkalmazza."
       }
       {
         _id: 'editor.undoGroupingInterval'
@@ -381,14 +377,13 @@ Settings:
       }
       {
         _id: 'editor.zoomFontWhenCtrlScrolling'
-        title: "Zoom Font When Ctrl Scrolling"
-        desc: "Change the editor font size when pressing the Ctrl key and
-               scrolling the mouse up/down."
+        title: "Betűméret növelése Ctrl+görgetés hatására"
+        desc: "Változtassa meg a betűk méretét, a Ctrl billentyű lenyomása és az egérgörgő egyidejű fel/le görgetése hatására."
       }
       {
         _id: 'system.windows.file-handler'
-        title: "Register as file handler"
-        desc: "Show Atom in the \"Open with\" application list for easy association with file types."
+        title: "Beállítás fájlkezelőként"
+        desc: "Az Atom megjelenítése a \"Megnyitás ezzel\" alkalmazás listában, hogy könnyen hozzá lehessen társítani bizonyos fájlitípusokhoz."
       }
       {
         _id: 'system.windows.shell-menu-files'
